@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ContentCard from "@/components/ContentCard";
 import SectionImage from "@/components/SectionImage";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const Index = () => {
   return (
@@ -41,60 +42,76 @@ const Index = () => {
       {/* SEÇÃO 2 - Novo Paradigma */}
       <section id="paradigma" className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="section-title">Novo Paradigma da Agronomia</h2>
-          <p className="section-subtitle">
-            Equilíbrio e Eficiência: Onde o Lucro Encontra a Natureza
-          </p>
+          <ScrollReveal>
+            <h2 className="section-title">Novo Paradigma da Agronomia</h2>
+            <p className="section-subtitle">
+              Equilíbrio e Eficiência: Onde o Lucro Encontra a Natureza
+            </p>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <ContentCard>
-              <h3 className="font-display text-xl font-bold text-primary mb-3">
-                O Futuro é Regenerativo
-              </h3>
-              <p className="quote-text">
-                "O solo não é um suporte inerte para plantas, é um ecossistema.
-                Com o plantio direto e a manutenção da palhada, reduzimos a
-                temperatura da terra e seguramos água. Solo com biologia ativa
-                responde melhor ao adubo e resiste mais a veranicos."
-              </p>
-            </ContentCard>
-            <ContentCard>
-              <h3 className="font-display text-xl font-bold text-primary mb-3">
-                ILPF: Integração Lavoura-Pecuária-Floresta
-              </h3>
-              <p className="quote-text">
-                Um modelo integrado que combina lavoura, pecuária e floresta no
-                mesmo espaço, maximizando a produção e minimizando o impacto
-                ambiental. O futuro da agricultura sustentável.
-              </p>
-            </ContentCard>
+            <ScrollReveal delay={100}>
+              <ContentCard>
+                <h3 className="font-display text-xl font-bold text-primary mb-3">
+                  O Futuro é Regenerativo
+                </h3>
+                <p className="quote-text">
+                  "O solo não é um suporte inerte para plantas, é um ecossistema.
+                  Com o plantio direto e a manutenção da palhada, reduzimos a
+                  temperatura da terra e seguramos água. Solo com biologia ativa
+                  responde melhor ao adubo e resiste mais a veranicos."
+                </p>
+              </ContentCard>
+            </ScrollReveal>
+            <ScrollReveal delay={250}>
+              <ContentCard>
+                <h3 className="font-display text-xl font-bold text-primary mb-3">
+                  ILPF: Integração Lavoura-Pecuária-Floresta
+                </h3>
+                <p className="quote-text">
+                  Um modelo integrado que combina lavoura, pecuária e floresta no
+                  mesmo espaço, maximizando a produção e minimizando o impacto
+                  ambiental. O futuro da agricultura sustentável.
+                </p>
+              </ContentCard>
+            </ScrollReveal>
           </div>
 
-          <SectionImage src="/images/slide2.jpg" alt="Novo paradigma da agronomia" />
+          <ScrollReveal delay={150}>
+            <SectionImage src="/images/slide2.jpg" alt="Novo paradigma da agronomia" />
+          </ScrollReveal>
         </div>
       </section>
 
       {/* SEÇÃO 3 - Saúde do Solo */}
       <section id="solo" className="py-20 md:py-28 bg-muted">
         <div className="container mx-auto px-4">
-          <h2 className="section-title">Saúde do Solo: O Ativo Mais Precioso</h2>
-          <p className="section-subtitle">Solo Vivo, Bolso Cheio.</p>
+          <ScrollReveal>
+            <h2 className="section-title">Saúde do Solo: O Ativo Mais Precioso</h2>
+            <p className="section-subtitle">Solo Vivo, Bolso Cheio.</p>
+          </ScrollReveal>
 
-          <ContentCard className="max-w-3xl mx-auto mb-12">
-            <h3 className="font-display text-xl font-bold text-primary mb-4">
-              O Ecossistema Sob Nossos Pés
-            </h3>
-            <p className="quote-text">
-              "O solo não é um suporte inerte para plantas, é um ecossistema.
-              Com o plantio direto e a manutenção da palhada, reduzimos a
-              temperatura da terra e seguramos a água. Solo com biologia ativa
-              responde melhor ao adubo e resiste mais a veranicos."
-            </p>
-          </ContentCard>
+          <ScrollReveal delay={100}>
+            <ContentCard className="max-w-3xl mx-auto mb-12">
+              <h3 className="font-display text-xl font-bold text-primary mb-4">
+                O Ecossistema Sob Nossos Pés
+              </h3>
+              <p className="quote-text">
+                "O solo não é um suporte inerte para plantas, é um ecossistema.
+                Com o plantio direto e a manutenção da palhada, reduzimos a
+                temperatura da terra e seguramos a água. Solo com biologia ativa
+                responde melhor ao adubo e resiste mais a veranicos."
+              </p>
+            </ContentCard>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <SectionImage src="/images/slide3-1.jpg" alt="Saúde do solo" />
-            <SectionImage src="/images/slide3-2.jpg" alt="Solo vivo" />
+            <ScrollReveal delay={100}>
+              <SectionImage src="/images/slide3-1.jpg" alt="Saúde do solo" />
+            </ScrollReveal>
+            <ScrollReveal delay={250}>
+              <SectionImage src="/images/slide3-2.jpg" alt="Solo vivo" />
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -102,36 +119,42 @@ const Index = () => {
       {/* SEÇÃO 4 - Tecnologia e Precisão */}
       <section id="tecnologia" className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="section-title">Tecnologia e Precisão</h2>
-          <p className="section-subtitle">
-            Dados que Plantam, Sensores que Colhem
-          </p>
+          <ScrollReveal>
+            <h2 className="section-title">Tecnologia e Precisão</h2>
+            <p className="section-subtitle">
+              Dados que Plantam, Sensores que Colhem
+            </p>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <SectionImage src="/images/slide4.jpg" alt="Tecnologia e precisão na agricultura" />
-            <ContentCard>
-              <h3 className="font-display text-xl font-bold text-primary mb-4">
-                Agricultura de Precisão
-              </h3>
-              <p className="quote-text">
-                "A era do 'olhômetro' acabou. Com agricultura de precisão,
-                tratamos cada metro quadrado como único. Aplicar apenas onde é
-                necessário reduz custos em até 30% e evita a lixiviação de
-                químicos para os lençóis freáticos. É tecnologia a serviço da
-                ética ambiental."
-              </p>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-start gap-2 text-card-foreground">
-                  <span className="text-primary font-bold">•</span> Redução de custos em até 30%
-                </li>
-                <li className="flex items-start gap-2 text-card-foreground">
-                  <span className="text-primary font-bold">•</span> Sensores e drones monitoram o campo
-                </li>
-                <li className="flex items-start gap-2 text-card-foreground">
-                  <span className="text-primary font-bold">•</span> Menos impacto ambiental
-                </li>
-              </ul>
-            </ContentCard>
+            <ScrollReveal delay={100}>
+              <SectionImage src="/images/slide4.jpg" alt="Tecnologia e precisão na agricultura" />
+            </ScrollReveal>
+            <ScrollReveal delay={250}>
+              <ContentCard>
+                <h3 className="font-display text-xl font-bold text-primary mb-4">
+                  Agricultura de Precisão
+                </h3>
+                <p className="quote-text">
+                  "A era do 'olhômetro' acabou. Com agricultura de precisão,
+                  tratamos cada metro quadrado como único. Aplicar apenas onde é
+                  necessário reduz custos em até 30% e evita a lixiviação de
+                  químicos para os lençóis freáticos. É tecnologia a serviço da
+                  ética ambiental."
+                </p>
+                <ul className="mt-4 space-y-2">
+                  <li className="flex items-start gap-2 text-card-foreground">
+                    <span className="text-primary font-bold">•</span> Redução de custos em até 30%
+                  </li>
+                  <li className="flex items-start gap-2 text-card-foreground">
+                    <span className="text-primary font-bold">•</span> Sensores e drones monitoram o campo
+                  </li>
+                  <li className="flex items-start gap-2 text-card-foreground">
+                    <span className="text-primary font-bold">•</span> Menos impacto ambiental
+                  </li>
+                </ul>
+              </ContentCard>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -139,29 +162,39 @@ const Index = () => {
       {/* SEÇÃO 5 - ILPF */}
       <section id="ilpf" className="py-20 md:py-28 bg-muted">
         <div className="container mx-auto px-4">
-          <h2 className="section-title">
-            Integração Lavoura-Pecuária-Floresta
-          </h2>
-          <p className="section-subtitle">
-            Sinergia em Campo: O Sistema 3 em 1
-          </p>
-
-          <ContentCard className="max-w-3xl mx-auto mb-12">
-            <h3 className="font-display text-xl font-bold text-primary mb-4">
-              O Novo Paradigma da Agronomia
-            </h3>
-            <p className="quote-text">
-              "A ILPF é o ápice da agronomia moderna. Recuperamos pastagens
-              degradadas, diversificamos o caixa do produtor com grãos e
-              madeira, e ainda garantimos bem-estar animal. É o sistema que
-              melhor simula o equilíbrio natural dentro de uma escala comercial."
+          <ScrollReveal>
+            <h2 className="section-title">
+              Integração Lavoura-Pecuária-Floresta
+            </h2>
+            <p className="section-subtitle">
+              Sinergia em Campo: O Sistema 3 em 1
             </p>
-          </ContentCard>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <ContentCard className="max-w-3xl mx-auto mb-12">
+              <h3 className="font-display text-xl font-bold text-primary mb-4">
+                O Novo Paradigma da Agronomia
+              </h3>
+              <p className="quote-text">
+                "A ILPF é o ápice da agronomia moderna. Recuperamos pastagens
+                degradadas, diversificamos o caixa do produtor com grãos e
+                madeira, e ainda garantimos bem-estar animal. É o sistema que
+                melhor simula o equilíbrio natural dentro de uma escala comercial."
+              </p>
+            </ContentCard>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <SectionImage src="/images/slide5-1.jpg" alt="Lavoura" />
-            <SectionImage src="/images/slide5-2.jpg" alt="Pecuária" />
-            <SectionImage src="/images/slide5-3.jpg" alt="Floresta" />
+            <ScrollReveal delay={100}>
+              <SectionImage src="/images/slide5-1.jpg" alt="Lavoura" />
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <SectionImage src="/images/slide5-2.jpg" alt="Pecuária" />
+            </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <SectionImage src="/images/slide5-3.jpg" alt="Floresta" />
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -169,31 +202,38 @@ const Index = () => {
       {/* SEÇÃO 6 - O Futuro */}
       <section id="futuro" className="py-20 md:py-28 bg-secondary text-primary-foreground">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-accent text-center mb-6 font-display">
-            O Futuro é Regenerativo
-          </h2>
-          <p className="text-lg md:text-xl text-primary-foreground/70 text-center mb-10 max-w-3xl mx-auto">
-            Resiliência: O Legado da Nossa Safra
-          </p>
-
-          <div className="max-w-3xl mx-auto bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 md:p-8 mb-12 border border-primary-foreground/20 cursor-pointer transition-all duration-300 hover:bg-accent/20"
-            onClick={(e) => {
-              const el = e.currentTarget;
-              el.style.backgroundColor = "hsl(270, 85%, 83%)";
-              el.style.color = "hsl(263, 70%, 30%)";
-            }}
-          >
-            <p className="text-base md:text-lg italic leading-relaxed">
-              "Para encerrar, o futuro exige que sejamos regenerativos. Não
-              basta não degradar; precisamos recuperar. O equilíbrio entre
-              produção e meio ambiente é o que garante que o agronegócio
-              continue sendo o motor da economia pelas próximas décadas. O
-              futuro já está plantado."
+          <ScrollReveal>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-accent text-center mb-6 font-display">
+              O Futuro é Regenerativo
+            </h2>
+            <p className="text-lg md:text-xl text-primary-foreground/70 text-center mb-10 max-w-3xl mx-auto">
+              Resiliência: O Legado da Nossa Safra
             </p>
-            <p className="text-xs mt-4 opacity-60">👆 Clique para mudar a cor</p>
-          </div>
+          </ScrollReveal>
 
-          <SectionImage src="/images/slide6.jpg" alt="O futuro regenerativo" />
+          <ScrollReveal delay={100}>
+            <div
+              className="max-w-3xl mx-auto bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 md:p-8 mb-12 border border-primary-foreground/20 cursor-pointer transition-all duration-300 hover:bg-accent/20"
+              onClick={(e) => {
+                const el = e.currentTarget;
+                el.style.backgroundColor = "hsl(270, 85%, 83%)";
+                el.style.color = "hsl(263, 70%, 30%)";
+              }}
+            >
+              <p className="text-base md:text-lg italic leading-relaxed">
+                "Para encerrar, o futuro exige que sejamos regenerativos. Não
+                basta não degradar; precisamos recuperar. O equilíbrio entre
+                produção e meio ambiente é o que garante que o agronegócio
+                continue sendo o motor da economia pelas próximas décadas. O
+                futuro já está plantado."
+              </p>
+              <p className="text-xs mt-4 opacity-60">👆 Clique para mudar a cor</p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <SectionImage src="/images/slide6.jpg" alt="O futuro regenerativo" />
+          </ScrollReveal>
         </div>
       </section>
 
